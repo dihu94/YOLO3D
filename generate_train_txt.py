@@ -11,7 +11,7 @@ if __name__ == "__main__":
     # Train ratio and max size from cmd
     parser = argparse.ArgumentParser(prog = 'Generate training idx.')
     parser.add_argument('--train_ratio', type = float, default = 0.85, help = 'Training ratio.')
-    parser.add_argument('--max_size', type = int, default = 6000, help = 'Maximum number of training images.')
+    parser.add_argument('--max_size', type = int, default = 120, help = 'Maximum number of training images.')
     args = parser.parse_args()
     train_ratio = args.train_ratio
     max_size = args.max_size
